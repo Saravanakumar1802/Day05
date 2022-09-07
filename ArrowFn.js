@@ -1,6 +1,6 @@
 //3.a) print odd num in array
 
-let oddNum = ((...arr) => {            //Anonymous Function
+let oddNum = ((...arr) => {            
     var result = [];
     for (let num of arr) {
 
@@ -15,7 +15,7 @@ console.log(oddNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 55, 97));
 //3.b) Convert all Strings to Tittle caps in string Array
 
 let capsArr = [];
-let titleCaps = ((st) => {            // IIFE
+let titleCaps = ((st) => {           
 
     let res = st.split(" ").reduce((a, b) => a + " " + (b.charAt(0).toUpperCase() + b.slice(1) + " "), ' ');
     capsArr.push(res);
@@ -25,7 +25,7 @@ console.log((capsArr));
 
 //3.c) Sum of all numbers in array
 
-let addNum = ((num) => {     //Anonymous Function
+let addNum = ((num) => {     
     let arr = [];
     let sum = 0;
     for (let val of num) {
@@ -37,9 +37,10 @@ let addNum = ((num) => {     //Anonymous Function
 console.log(addNum([1, 2, 3, 4, 5, 6, 7, 8, 9, 5]));
 
 //3.d) Return all prime Numbers in Array
+
 primearray = [];
 nonprimearray = [];
-let isPrime = ((array) => {                    //anonymous func
+let isPrime = ((array) => {                    
     for (var iterator of array) {
         for (var i = 2; i < iterator; i++) {
             var a = i;
@@ -57,8 +58,9 @@ let isPrime = ((array) => {                    //anonymous func
 console.log(isPrime([1, 3, 7, 9, 15, 21, 56, 11]));
 
 // 3.e) Return all the palindromes in Array
+
 let arr;
-let palindrome = ((input) => {          // Anonymous Fn
+let palindrome = ((input) => {         
     arr = [];
     for (let key of input) {
         let val = key.split("").reverse().join("");
